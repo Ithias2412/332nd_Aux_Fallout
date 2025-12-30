@@ -1,7 +1,7 @@
 class DefaultEventhandlers;
 class CfgPatches
 {
-	class IA_Armour_Patch_Aftermath
+	class 332nd_Fallout_Aux
 	{
 		name = "332nd Fallout Aux";
 		author = "332nd Aux Team";
