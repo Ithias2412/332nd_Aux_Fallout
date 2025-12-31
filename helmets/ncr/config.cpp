@@ -41,17 +41,18 @@ class cfgWeapons
 			{
 				class Head
 				{
-					hitpointName="HitHead";
-					armor=8.3000002;
-					passThrough=0.2;
-				};
+					armor = 10;
+					hitPointName="HitHead";
+					passThrough=0.1;
+				};	
 			};
-			mass=10;
-			uniformModel="\Sterben_TOP\fallout_uniform_02\NCR_green_beret.p3d";
-			allowedSlots[]={801,901,701,605};
-			modelSides[]={0,1,2,3};
+            mass=10;
+		    uniformModel="\Sterben_TOP\fallout_uniform_02\NCR_green_beret.p3d";
+		    allowedSlots[]={801,901,701,605};
+		    modelSides[]={0,1,2,3};
 		};
-	};
+
+    };
     class 332nd_Helmet_NCR_Black_beret: ItemCore
 	{
 		scope=2;
@@ -65,10 +66,10 @@ class cfgWeapons
 			{
 				class Head
 				{
-					hitpointName="HitHead";
-					armor=8.3000002;
-					passThrough=0.2;
-				};
+					armor = 10;
+					hitPointName="HitHead";
+					passThrough=0.1;
+				};	
 			};
 			mass=10;
 			uniformModel="\Sterben_TOP\fallout_uniform_02\NCR_Black_beret.p3d";
@@ -89,10 +90,10 @@ class cfgWeapons
 			{
 				class Head
 				{
-					hitpointName="HitHead";
-					armor=12.5;
-					passThrough=0.2;
-				};
+					armor = 10;
+					hitPointName="HitHead";
+					passThrough=0.1;
+				};	
 			};
 			mass=10;
 			uniformModel="\Sterben_TOP\fallout_uniform_02\armor_ncr_trooper_helm_02.p3d";
@@ -113,10 +114,10 @@ class cfgWeapons
 			{
 				class Head
 				{
-					hitpointName="HitHead";
-					armor=12.5;
-					passThrough=0.2;
-				};
+					armor = 10;
+					hitPointName="HitHead";
+					passThrough=0.1;
+				};	
 			};
 			mass=10;
 			uniformModel="\Sterben_TOP\fallout_uniform_02\armor_ncr_trooper_helm_Medic.p3d";
@@ -137,10 +138,10 @@ class cfgWeapons
 			{
 				class Head
 				{
-					hitpointName="HitHead";
-					armor=12.5;
-					passThrough=0.2;
-				};
+					armor = 10;
+					hitPointName="HitHead";
+					passThrough=0.1;
+				};	
 			};
 			mass=10;
 			uniformModel="\Sterben_TOP\fallout_uniform_02\armor_ncr_trooper_helm.p3d";
@@ -190,10 +191,10 @@ class cfgWeapons
 			{
 				class Head
 				{
+					armor = 10;
 					hitPointName="HitHead";
-					armor=1;
-					passThrough=0.5;
-				};
+					passThrough=0.1;
+				};	
 			};
 		};
 	};
@@ -236,10 +237,10 @@ class cfgWeapons
 			{
 				class Head
 				{
+					armor = 10;
 					hitPointName="HitHead";
-					armor=1;
-					passThrough=0.5;
-				};
+					passThrough=0.1;
+				};	
 			};
 		};
 	};
@@ -285,10 +286,10 @@ class cfgWeapons
 			{
 				class Head
 				{
+					armor = 10;
 					hitPointName="HitHead";
-					armor=1;
-					passThrough=0.5;
-				};
+					passThrough=0.1;
+				};	
 			};
 		};
 	};
@@ -331,10 +332,10 @@ class cfgWeapons
 			{
 				class Head
 				{
+					armor = 10;
 					hitPointName="HitHead";
-					armor=1;
-					passThrough=0.5;
-				};
+					passThrough=0.1;
+				};	
 			};
 		};
 	};
@@ -376,10 +377,10 @@ class cfgWeapons
 			{
 				class Head
 				{
+					armor = 10;
 					hitPointName="HitHead";
-					armor=1;
-					passThrough=0.5;
-				};
+					passThrough=0.1;
+				};	
 			};
 		};
 	};
@@ -418,10 +419,10 @@ class cfgWeapons
 			{
 				class Head
 				{
+					armor = 10;
 					hitPointName="HitHead";
-					armor=1;
-					passThrough=0.5;
-				};
+					passThrough=0.1;
+				};	
 			};
 		};
 	};
@@ -476,10 +477,10 @@ class cfgWeapons
 			{
 				class Head
 				{
+					armor = 10;
 					hitPointName="HitHead";
-					armor=1;
-					passThrough=0.5;
-				};
+					passThrough=0.1;
+				};	
 			};
 		};
 	};
@@ -534,10 +535,10 @@ class cfgWeapons
 			{
 				class Head
 				{
+					armor = 10;
 					hitPointName="HitHead";
-					armor=1;
-					passThrough=0.5;
-				};
+					passThrough=0.1;
+				};	
 			};
 		};
 	};
@@ -589,10 +590,10 @@ class cfgWeapons
 			{
 				class Head
 				{
+					armor = 10;
 					hitPointName="HitHead";
-					armor=1;
-					passThrough=0.5;
-				};
+					passThrough=0.1;
+				};	
 			};
 		};
 	};
@@ -641,10 +642,10 @@ class cfgWeapons
 			{
 				class Head
 				{
+					armor = 10;
 					hitPointName="HitHead";
-					armor=1;
-					passThrough=0.5;
-				};
+					passThrough=0.1;
+				};	
 			};
 		};
 	};
@@ -693,10 +694,10 @@ class cfgWeapons
 			{
 				class Head
 				{
+					armor = 10;
 					hitPointName="HitHead";
-					armor=1;
-					passThrough=0.5;
-				};
+					passThrough=0.1;
+				};	
 			};
 		};
 	};
@@ -733,12 +734,11 @@ class cfgWeapons
 			{
 				class Head
 				{
+					armor = 10;
 					hitPointName="HitHead";
-					armor=1;
-					passThrough=0.5;
-				};
+					passThrough=0.1;
+				};	
 			};
 		};
 	};
-
-}
+};
