@@ -26,6 +26,30 @@ class CfgWeapons
     {
         type = 801;
     };
+    class Vest_Camo_Base;
+    class VestItem;
+
+    class 332nd_Invisible_Armor_Vest: Vest_Camo_Base
+    {
+        scope = 2;
+        scopeArsenal = 2;
+        displayName = "[332nd] NCR Armor (Integrated)";
+        author = "Frankie | 332nd Aux Team";
+
+        picture = "";        
+        model = "\A3\Weapons_F\empty.p3d";   
+
+        hiddenSelections[] = {};
+        hiddenSelectionsTextures[] = {};
+
+        class ItemInfo: VestItem
+        {
+            uniformModel = "\A3\Weapons_F\empty.p3d";
+            containerClass = "Supply0";  
+            mass = 0;
+            #include "\332nd_Aux_Fallout\hitpoints_values\med_armor.hpp"
+        };
+    };
     
     class 332nd_Uniform_NCR_Trooper_01: ItemCore
     {
@@ -40,8 +64,15 @@ class CfgWeapons
             containerClass = "Supply50";
             uniformType = "Neopren";
             mass = 40;
-            armor = 2;
+
             
+        };
+        class ItemInfo: VestItem
+        {
+            uniformModel = "\A3\Weapons_F\empty.p3d";
+            containerClass = "Supply0";  
+            mass = 0;
+            #include "\332nd_Aux_Fallout\hitpoints_values\med_armor.hpp"
         };
         
     };
@@ -55,7 +86,7 @@ class CfgWeapons
             containerClass = "Supply50";
             uniformType = "Neopren";
             mass = 40;
-            armor = 2;
+
 
             
         };
@@ -70,7 +101,7 @@ class CfgWeapons
             containerClass = "Supply50";
             uniformType = "Neopren";
             mass = 40;
-            armor = 2;
+
 
         };
     };
@@ -84,7 +115,7 @@ class CfgWeapons
             containerClass = "Supply50";
             uniformType = "Neopren";
             mass = 40;
-            armor = 2;
+
         };
     };
     class 332nd_Uniform_NCR_Trooper_Medic: 332nd_Uniform_NCR_Trooper_01
@@ -97,7 +128,7 @@ class CfgWeapons
             containerClass = "Supply50";
             uniformType = "Neopren";
             mass = 40;
-            armor = 2;
+
 
         };
     }
@@ -111,7 +142,7 @@ class CfgWeapons
             containerClass = "Supply50";
             uniformType = "Neopren";
             mass = 40;
-            armor = 2;
+
 
         };
     };
@@ -125,7 +156,7 @@ class CfgWeapons
             containerClass = "Supply50";
             uniformType = "Neopren";
             mass = 40;
-            armor = 2;
+
 
         };
     };
@@ -139,7 +170,7 @@ class CfgWeapons
             containerClass = "Supply50";
             uniformType = "Neopren";
             mass = 40;
-            armor = 2;
+
         };
     };
     class 332nd_Uniform_NCR_Ranger_Patrol: 332nd_Uniform_NCR_Trooper_01
@@ -152,7 +183,7 @@ class CfgWeapons
             containerClass = "Supply50";
             uniformType = "Neopren";
             mass = 40;
-            armor = 2;
+
 
         };
     };
@@ -166,7 +197,7 @@ class CfgWeapons
             containerClass = "Supply50";
             uniformType = "Neopren";
             mass = 40;
-            armor = 2;
+
 
         };
     };
@@ -193,11 +224,8 @@ class CfgVehicles
         scope = 1;
         uniformClass = "332nd_Uniform_NCR_Trooper_01";
         #include "\332nd_Aux_Fallout\hitpoints_values\hitpoints_uniforms.hpp"
-        armor=2;
-		armorStructural=4;
-		explosionShielding=0.40000001;
-		minTotalDamageThreshold=0.001;
-		impactDamageMultiplier=0.5;
+
+    respawnLinkedItems[] += {"332nd_Invisible_Armor_Vest"};
         
     };
     class 332nd_Uniform_NCR_Trooper_Medic_Veh: armor_ncr_trooper_clothes_medic_body
@@ -207,11 +235,8 @@ class CfgVehicles
         scope = 1;
         uniformClass = "332nd_Uniform_NCR_Trooper_Medic";
         #include "\332nd_Aux_Fallout\hitpoints_values\hitpoints_uniforms.hpp"
-        armor=2;
-		armorStructural=4;
-		explosionShielding=0.40000001;
-		minTotalDamageThreshold=0.001;
-		impactDamageMultiplier=0.5;
+
+
     };
     class 332nd_Uniform_NCR_Trooper_02_Veh: armor_ncr_trooper_02_body
     {
@@ -220,11 +245,8 @@ class CfgVehicles
         scope = 1;
         uniformClass = "332nd_Uniform_NCR_Trooper_02";
         #include "\332nd_Aux_Fallout\hitpoints_values\hitpoints_uniforms.hpp"
-        armor=2;
-		armorStructural=4;
-		explosionShielding=0.40000001;
-		minTotalDamageThreshold=0.001;
-		impactDamageMultiplier=0.5;
+
+
     };
     class 332nd_Uniform_NCR_Trooper_03_Veh: armor_ncr_trooper_03_body
     {
@@ -233,11 +255,8 @@ class CfgVehicles
         scope = 1;
         uniformClass = "332nd_Uniform_NCR_Trooper_03";
         #include "\332nd_Aux_Fallout\hitpoints_values\hitpoints_uniforms.hpp"
-        armor=2;
-		armorStructural=4;
-		explosionShielding=0.40000001;
-		minTotalDamageThreshold=0.001;
-		impactDamageMultiplier=0.5;
+
+
     };
     class 332nd_Uniform_NCR_Trooper_Plain_Veh: armornvncrtrooper_plain_body
     {
@@ -246,11 +265,8 @@ class CfgVehicles
         scope = 1;
         uniformClass = "332nd_Uniform_NCR_Trooper_Plain";
         #include "\332nd_Aux_Fallout\hitpoints_values\hitpoints_uniforms.hpp"
-        armor=2;
-		armorStructural=4;
-		explosionShielding=0.40000001;
-		minTotalDamageThreshold=0.001;
-		impactDamageMultiplier=0.5;
+
+
     };
     class 332nd_Uniform_NCR_Trooper_AB_Veh: armor_ncr_trooper_airtrooper_body
     {
@@ -259,11 +275,8 @@ class CfgVehicles
         scope = 1;
         uniformClass = "332nd_Uniform_NCR_Trooper_AB";
         #include "\332nd_Aux_Fallout\hitpoints_values\hitpoints_uniforms.hpp"
-        armor=2;
-		armorStructural=4;
-		explosionShielding=0.40000001;
-		minTotalDamageThreshold=0.001;
-		impactDamageMultiplier=0.5;
+
+
     };
     class 332nd_Uniform_NCR_PowerArmor_Veh: ncr_powerarmor_body
     {
@@ -272,11 +285,8 @@ class CfgVehicles
         scope = 1;
         uniformClass = "332nd_Uniform_NCR_PowerArmor";
         #include "\332nd_Aux_Fallout\hitpoints_values\hitpoints_uniforms.hpp"
-        armor=2;
-		armorStructural=4;
-		explosionShielding=0.40000001;
-		minTotalDamageThreshold=0.001;
-		impactDamageMultiplier=0.5;
+
+
     }
     class 332nd_Uniform_NCR_Ranger_Fox_Veh: combat_ranger_Fox_body
     {
@@ -285,11 +295,8 @@ class CfgVehicles
         scope = 1;
         uniformClass = "332nd_Uniform_NCR_Ranger_Fox";
         #include "\332nd_Aux_Fallout\hitpoints_values\hitpoints_uniforms.hpp"
-        armor=2;
-		armorStructural=4;
-		explosionShielding=0.40000001;
-		minTotalDamageThreshold=0.001;
-		impactDamageMultiplier=0.5;
+
+
     };
     class 332nd_Uniform_NCR_Ranger_Patrol_Veh: nv_ranger_body
     {
@@ -298,11 +305,8 @@ class CfgVehicles
         scope = 1;
         uniformClass = "332nd_Uniform_NCR_Ranger_Patrol";
         #include "\332nd_Aux_Fallout\hitpoints_values\hitpoints_uniforms.hpp"
-        armor=2;
-		armorStructural=4;
-		explosionShielding=0.40000001;
-		minTotalDamageThreshold=0.001;
-		impactDamageMultiplier=0.5;
+
+
     };
     class 332nd_Uniform_NCR_Ranger_Combat_Veh: combat_ranger_body
     {
@@ -311,11 +315,8 @@ class CfgVehicles
         scope = 1;
         uniformClass = "332nd_Uniform_NCR_Ranger_Combat";
         #include "\332nd_Aux_Fallout\hitpoints_values\hitpoints_uniforms.hpp"
-        armor=2;
-		armorStructural=4;
-		explosionShielding=0.40000001;
-		minTotalDamageThreshold=0.001;
-		impactDamageMultiplier=0.5;
+
+
     };
 
 };
